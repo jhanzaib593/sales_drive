@@ -4,6 +4,7 @@ import Service from "../../components/service";
 import Project from "../../components/project";
 import Offers from "../../components/offers";
 import Contact from "../../components/contact";
+import Footer from "../../components/footer";
 
 function Home() {
   return (
@@ -19,6 +20,7 @@ function Home() {
       <div className="container">
         <Contact />
       </div>
+      <Footer />
     </>
   );
 }

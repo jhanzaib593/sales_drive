@@ -1,0 +1,21 @@
+.foot_meau {
+  list-style: none;
+  color: white;
+  border-left: 3px solid white;
+  border-right: 3px solid white;
+}
+.foot_meau li {
+  padding: 5px 0;
+}
+.foot_contact {
+  list-style: none;
+  color: white;
+}
+.foot_contact li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+.foot_contact li a:hover {
+  color: rgb(156 163 175);
+}
