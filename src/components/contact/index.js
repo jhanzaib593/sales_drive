@@ -22,7 +22,7 @@ function Contact() {
       >
         <div className="contact contact_color">
           <Row>
-            <Col span={16} xs={24} sm={24} md={16} lg={16}>
+            <Col span={16} xs={24} sm={24} md={24} lg={16}>
               <h1
                 className="font_family"
                 style={{ fontWeight: 700, fontSize: 48, color: "white" }}
@@ -34,7 +34,7 @@ function Contact() {
               span={8}
               xs={24}
               sm={24}
-              md={8}
+              md={24}
               lg={8}
               style={{ margin: "auto", textAlign: "center" }}
             >
