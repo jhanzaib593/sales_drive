@@ -25,7 +25,7 @@ function Contact() {
             <Col span={16} xs={24} sm={24} md={24} lg={16}>
               <h1
                 className="font_family"
-                style={{ fontWeight: 700, fontSize: 48, color: "white" }}
+                style={{ fontWeight: 700, fontSize: 35, color: "white" }}
               >
                 Have an awesome project in mind?
               </h1>
@@ -36,7 +36,7 @@ function Contact() {
               sm={24}
               md={24}
               lg={8}
-              style={{ margin: "auto", textAlign: "center" }}
+              style={{ margin: "auto", textAlign: "center", padding: "20px 0" }}
             >
               <Button
                 className="Contact_btn font_family"
@@ -53,6 +53,7 @@ function Contact() {
               color: "white",
               fontWeight: 400,
               fontSize: 24,
+              padding: "10px 0",
             }}
           >
             Lets discuss it and make your dream software come true!

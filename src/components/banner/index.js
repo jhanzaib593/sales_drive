@@ -19,13 +19,18 @@ function Banner() {
         >
           <h1
             className="font_family font_color"
-            style={{ fontWeight: 700, fontSize: 64 }}
+            style={{ fontWeight: 700, fontSize: 50 }}
           >
             Growing Your Business Is Our Calling
           </h1>
           <p
             className="font_family"
-            style={{ color: "rgb(156 163 175)", fontWeight: 400, fontSize: 20 }}
+            style={{
+              color: "rgb(156 163 175)",
+              fontWeight: 400,
+              fontSize: 20,
+              padding: "20px 0",
+            }}
           >
             We provide developers & designers using latest technologies to help
             you scale up your business.
