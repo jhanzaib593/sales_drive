@@ -24,7 +24,6 @@ const Header = () => {
     setIsModalOpen(false);
   };
   const [top, setTop] = React.useState(0);
-  console.log(setTop);
   return (
     <>
       <Affix offsetTop={top}>
@@ -32,7 +31,7 @@ const Header = () => {
           <div className="container">
             <Row style={{ padding: "12px 0" }}>
               <Col span={8} className="logo">
-                <img src={logo} alt="" width={80} height={50} />
+                <img src={logo} alt="" width={100} height={80} />
               </Col>
               <Col span={12}>
                 <div className="nav">

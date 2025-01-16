@@ -18,7 +18,7 @@ function Footer() {
             <Col span={8} xs={24} sm={24} md={8} lg={8}>
               <img src={logo} alt="" width={200} height={100} />
               <p
-                class="font_family"
+                className="font_family"
                 style={{
                   color: "rgb(156, 163, 175)",
                   fontWeight: 400,
@@ -29,7 +29,7 @@ function Footer() {
               </p>
             </Col>
             <Col span={8} xs={24} sm={24} md={8} lg={8}>
-              <ul class="foot_meau">
+              <ul className="foot_meau">
                 <li>Home</li>
                 <li>Company</li>
                 <li>Services</li>
@@ -39,7 +39,7 @@ function Footer() {
               </ul>
             </Col>
             <Col span={8} xs={24} sm={24} md={8} lg={8}>
-              <ul class="foot_contact">
+              <ul className="foot_contact">
                 <li>
                   <span style={{ fontWeight: "bolder", fontSize: 18 }}>
                     Tel:{" "}
