@@ -27,7 +27,7 @@
 }
 .h_btn1 {
   border-radius: 8px;
-  background: var(--Gray--4, #ebebeb) !important;
+  background-color: #ebebeb !important;
   box-shadow: 0px 0px 0px 0px rgba(23, 23, 23, 0.04),
     0px 2px 4px 0px rgba(23, 23, 23, 0.04),
     0px 7px 7px 0px rgba(23, 23, 23, 0.03),
@@ -38,12 +38,12 @@
   height: 44px;
 }
 .h_btn1:hover {
-  border: #152c5b !important;
-  color: #152c5b !important;
+  border: #070654 !important;
+    color: #070654 !important;
 }
 .h_btn2 {
   border-radius: 8px;
-  background: var(--Primary, #152c5b) !important;
+  background-color: #070654 !important;
   box-shadow: 0px 0px 0px 0px rgba(23, 23, 23, 0.04),
     0px 2px 4px 0px rgba(23, 23, 23, 0.04),
     0px 7px 7px 0px rgba(23, 23, 23, 0.03),
@@ -55,8 +55,8 @@
   height: 44px;
 }
 .h_btn2:hover {
-  border: #152c5b !important;
-  background: var(--Primary, #233964) !important;
+  border: #070654 !important;
+    background-color: #233964 !important;
   color: rgb(255, 255, 255) !important;
 }
 @media only screen and (min-width: 100px) and (max-width: 991px) {

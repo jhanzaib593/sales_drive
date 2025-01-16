@@ -1,16 +1,30 @@
 import { Button, Col, Row } from "antd";
-import React from "react";
-import Recruiting from "../../assets/img/Recruiting.png";
-import Stream from "../../assets/img/Stream.png";
-import Freelance from "../../assets/img/Freelance.png";
-import Aura from "../../assets/img/Aura.png";
-import Surtido from "../../assets/img/Surtido.png";
-import ManagementApp from "../../assets/img/ManagementApp.png";
+import React, { useEffect, useState } from "react";
 import "./index.css";
 import { DoubleRightOutlined } from "@ant-design/icons";
 import { Scrolling } from "react-scrolling";
 
 function Project() {
+  const [products, setProducts] = useState([]);
+
+  async function getProducts() {
+    try {
+      const response = await fetch("/services.json");
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      const text = await response.text();
+      const data = JSON.parse(text);
+
+      setProducts(data.allprojuctData);
+    } catch (error) {
+      console.error("Failed to fetch products:", error);
+    }
+  }
+
+  useEffect(() => {
+    getProducts();
+  }, []);
   return (
     <div
       style={{
@@ -31,208 +45,59 @@ function Project() {
             style={{ color: "rgb(156 163 175)", fontWeight: 400, fontSize: 20 }}
           >
             We are ready to scale up your business with our great work result.
-          </p>{" "}
+          </p>
         </Scrolling>
         <Row style={{ padding: "4rem 0" }}>
-          <Col span={8} xs={24} sm={24} md={12} lg={8}>
-            <Scrolling
-              animate="fade-up"
-              transition={{ easing: "ease-in", delay: 10 }}
-            >
-              <div className="prject">
-                <img
-                  src={Recruiting}
-                  alt="Recruiting"
-                  width={"100%"}
-                  height={280}
-                />
-                <h2
-                  className="font_family"
-                  style={{ fontWeight: 400, fontSize: 20 }}
-                >
-                  Recruiting App
-                </h2>
-                <p
-                  className="font_family"
-                  style={{
-                    color: "rgb(156 163 175)",
-                    fontWeight: 400,
-                    fontSize: 16,
-                    paddingBottom: "1em",
-                  }}
-                >
-                  Mobile Apps
-                </p>
-              </div>
-            </Scrolling>
-          </Col>
-
-          <Col span={8} xs={24} sm={24} md={12} lg={8}>
-            <Scrolling
-              animate="fade-up"
-              transition={{ easing: "ease-in", delay: 10 }}
-            >
-              <div className="prject">
-                <img src={Stream} alt="Stream" width={"100%"} height={280} />
-                <h2
-                  className="font_family"
-                  style={{ fontWeight: 400, fontSize: 20 }}
-                >
-                  Stream+
-                </h2>
-                <p
-                  className="font_family"
-                  style={{
-                    color: "rgb(156 163 175)",
-                    fontWeight: 400,
-                    fontSize: 16,
-                    paddingBottom: "1em",
-                  }}
-                >
-                  Mobile Apps
-                </p>
-              </div>
-            </Scrolling>
-          </Col>
-
-          <Col span={8} xs={24} sm={24} md={12} lg={8}>
-            <Scrolling
-              animate="fade-up"
-              transition={{ easing: "ease-in", delay: 10 }}
-            >
-              <div className="prject">
-                <img
-                  src={Freelance}
-                  alt="Freelance"
-                  width={"100%"}
-                  height={280}
-                />
-                <h2
-                  className="font_family"
-                  style={{ fontWeight: 400, fontSize: 20 }}
-                >
-                  Freelance
-                </h2>
-                <p
-                  className="font_family"
-                  style={{
-                    color: "rgb(156 163 175)",
-                    fontWeight: 400,
-                    fontSize: 16,
-                    paddingBottom: "1em",
-                  }}
-                >
-                  Mobile Apps
-                </p>
-              </div>
-            </Scrolling>
-          </Col>
-
-          <Col span={8} xs={24} sm={24} md={12} lg={8}>
-            <Scrolling
-              animate="fade-up"
-              transition={{ easing: "ease-in", delay: 10 }}
-            >
-              <div className="prject">
-                <img src={Aura} alt="Aura" width={"100%"} height={280} />
-                <h2
-                  className="font_family"
-                  style={{ fontWeight: 400, fontSize: 20 }}
-                >
-                  Aura
-                </h2>
-                <p
-                  className="font_family"
-                  style={{
-                    color: "rgb(156 163 175)",
-                    fontWeight: 400,
-                    fontSize: 16,
-                    paddingBottom: "1em",
-                  }}
-                >
-                  Website
-                </p>
-              </div>
-            </Scrolling>
-          </Col>
-
-          <Col span={8} xs={24} sm={24} md={12} lg={8}>
-            <Scrolling
-              animate="fade-up"
-              transition={{ easing: "ease-in", delay: 10 }}
-            >
-              <div className="prject">
-                <img
-                  src={Surtido}
-                  alt="Surtido Rico"
-                  width={"100%"}
-                  height={280}
-                />
-                <h2
-                  className="font_family"
-                  style={{ fontWeight: 400, fontSize: 20 }}
-                >
-                  Surtido Rico
-                </h2>
-                <p
-                  className="font_family"
-                  style={{
-                    color: "rgb(156 163 175)",
-                    fontWeight: 400,
-                    fontSize: 16,
-                    paddingBottom: "1em",
-                  }}
-                >
-                  Website
-                </p>
-              </div>
-            </Scrolling>
-          </Col>
-
-          <Col span={8} xs={24} sm={24} md={12} lg={8}>
-            <Scrolling
-              animate="fade-up"
-              transition={{ easing: "ease-in", delay: 10 }}
-            >
-              <div className="prject">
-                <img
-                  src={ManagementApp}
-                  alt="Courses Management"
-                  width={"100%"}
-                  height={280}
-                />
-                <h2
-                  className="font_family"
-                  style={{ fontWeight: 400, fontSize: 20 }}
-                >
-                  Courses Management
-                </h2>
-                <p
-                  className="font_family"
-                  style={{
-                    color: "rgb(156 163 175)",
-                    fontWeight: 400,
-                    fontSize: 16,
-                    paddingBottom: "1em",
-                  }}
-                >
-                  Website
-                </p>
-              </div>
-            </Scrolling>
-          </Col>
+          {Array.isArray(products) &&
+            products.map((service, index) => {
+              return (
+                <Col span={8} xs={24} sm={24} md={12} lg={8} key={index}>
+                  <Scrolling
+                    animate="fade-up"
+                    transition={{ easing: "ease-in", delay: 10 }}
+                  >
+                    <div className="prject">
+                      <img
+                        src={service.img}
+                        alt={service.alt}
+                        width={"100%"}
+                        height={280}
+                        className={service.class ? service.class : ""}
+                      />
+                      <h2
+                        className="font_family"
+                        style={{ fontWeight: 400, fontSize: 20 }}
+                      >
+                        {service.name}
+                      </h2>
+                      <p
+                        className="font_family"
+                        style={{
+                          color: "rgb(156 163 175)",
+                          fontWeight: 400,
+                          fontSize: 16,
+                          paddingBottom: "1em",
+                        }}
+                      >
+                        {service.source}
+                      </p>
+                    </div>
+                  </Scrolling>
+                </Col>
+              );
+            })}
         </Row>
         {/* <Scrolling
           animate="zoom-in"
           transition={{ easing: "ease-in", delay: 10 }}
         > */}
-        <Button
+        {/* <Button
           className="all_project font_family"
           style={{ width: 220, fontWeight: 600, height: 60 }}
         >
           See More
           <DoubleRightOutlined />
-        </Button>
+        </Button> */}
         {/* </Scrolling> */}
       </div>
     </div>

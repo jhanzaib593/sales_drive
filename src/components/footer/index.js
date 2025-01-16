@@ -1,6 +1,6 @@
 import { Col, Row } from "antd";
 import React from "react";
-import logo from "../../assets/img/logo (2).png";
+import logo from "../../assets/img/logo (2).jpeg";
 import "./index.css";
 
 function Footer() {
@@ -10,7 +10,7 @@ function Footer() {
         className="bg_color"
         style={{
           padding: "2em 0",
-          backgroundColor: "#152c5b",
+          backgroundColor: "#070654",
         }}
       >
         <div className="container">

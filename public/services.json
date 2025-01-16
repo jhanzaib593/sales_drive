@@ -1,0 +1,74 @@
+{
+  "allServiceData": [
+    {
+      "id": "Se010001",
+      "name": "Recruitment",
+      "img": "/assets/img/recruitment.png",
+      "alt": "Recruitment",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas explicabo laborum ducimus error? Quo non quam recusandae. Molestiae alias vel culpa ad dicta unde fugit commodi! Perferendis maxime repudiandae nemo."
+    },
+    {
+      "id": "Se010002",
+      "name": "Payroll Management",
+      "img": "/assets/img/payroll.png",
+      "alt": "Payroll Management",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas explicabo laborum ducimus error? Quo non quam recusandae. Molestiae alias vel culpa ad dicta unde fugit commodi! Perferendis maxime repudiandae nemo."
+    },
+    {
+      "id": "Se010003",
+      "name": "Web Development",
+      "img": "/assets/img/Web.png",
+      "alt": "Web Development",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas explicabo laborum ducimus error? Quo non quam recusandae. Molestiae alias vel culpa ad dicta unde fugit commodi! Perferendis maxime repudiandae nemo."
+    },
+    {
+      "id": "Se010004",
+      "name": "App Development",
+      "img": "/assets/img/app.png",
+      "alt": "App Development",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas explicabo laborum ducimus error? Quo non quam recusandae. Molestiae alias vel culpa ad dicta unde fugit commodi! Perferendis maxime repudiandae nemo."
+    },
+    {
+      "id": "Se010005",
+      "name": "Cloud Services",
+      "img": "/assets/img/cloud service.png",
+      "alt": "Cloud Services",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas explicabo laborum ducimus error? Quo non quam recusandae. Molestiae alias vel culpa ad dicta unde fugit commodi! Perferendis maxime repudiandae nemo."
+    }
+  ],
+  "allprojuctData": [
+    {
+      "id": "PRo010001",
+      "name": "Payroll Management System",
+      "img": "/assets/img/ManagementApp.png",
+      "alt": "Payroll Management System",
+      "source": "Web Application",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas explicabo laborum ducimus error? Quo non quam recusandae. Molestiae alias vel culpa ad dicta unde fugit commodi! Perferendis maxime repudiandae nemo."
+    },
+    {
+      "id": "PRo010002",
+      "name": "Warehouse Management System",
+      "img": "/assets/img/wms.png",
+      "alt": "Warehouse Management System",
+      "source": "Web Application",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas explicabo laborum ducimus error? Quo non quam recusandae. Molestiae alias vel culpa ad dicta unde fugit commodi! Perferendis maxime repudiandae nemo."
+    },
+    {
+      "id": "PRo010003",
+      "name": "Ticketing System Software",
+      "img": "/assets/img/tss.jpg",
+      "alt": "Ticketing System Software",
+      "source": "Web Application",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas explicabo laborum ducimus error? Quo non quam recusandae. Molestiae alias vel culpa ad dicta unde fugit commodi! Perferendis maxime repudiandae nemo."
+    },
+    {
+      "id": "PRo010004",
+      "name": "Distribution Management System",
+      "img": "/assets/img/dms.jpg",
+      "alt": "Distribution Management System",
+      "source": "Web Application",
+      "class": "Distribution_object",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas explicabo laborum ducimus error? Quo non quam recusandae. Molestiae alias vel culpa ad dicta unde fugit commodi! Perferendis maxime repudiandae nemo."
+    }
+  ]
+}

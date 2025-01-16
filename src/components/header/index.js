@@ -1,12 +1,14 @@
 import { Col, Drawer, Row, Affix, Button } from "antd";
 import "./index.css";
 import { NavLink } from "react-router-dom";
-import logo from "../../assets/img/logo (2).png";
+import logo from "../../assets/img/logo (2).jpeg";
 import React, { useState } from "react";
 import { MenuFoldOutlined } from "@ant-design/icons";
+import ModalContact from "../contact/modal";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const showDrawer = () => {
     setOpen(true);
   };
@@ -14,6 +16,13 @@ const Header = () => {
     setOpen(false);
   };
 
+  const showModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
   const [top, setTop] = React.useState(0);
   console.log(setTop);
   return (
@@ -23,7 +32,7 @@ const Header = () => {
           <div className="container">
             <Row style={{ padding: "12px 0" }}>
               <Col span={8} className="logo">
-                <img src={logo} alt="" width={100} height={33} />
+                <img src={logo} alt="" width={80} height={50} />
               </Col>
               <Col span={12}>
                 <div className="nav">
@@ -35,7 +44,9 @@ const Header = () => {
                 </div>
               </Col>
               <Col span={4} className="h_btn">
-                <Button className="h_btn2">Contact Us</Button>
+                <Button onClick={showModal} className="h_btn2">
+                  Contact Us
+                </Button>
                 {/* <Button className="h_btn2">Sign up</Button> */}
               </Col>
               <Col span={4} className="h_drawer">
@@ -55,6 +66,7 @@ const Header = () => {
           </div>
         </div>
       </Affix>
+      <ModalContact showModal={isModalOpen} handleClose={handleCloseModal} />
     </>
   );
 };

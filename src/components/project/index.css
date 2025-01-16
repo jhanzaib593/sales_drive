@@ -7,10 +7,14 @@
 }
 .prject img {
   border-radius: 1rem 1rem 0 0;
+
 }
 .prject:hover {
   transform: scale(1.06);
   transition: 0.5s;
+}
+.Distribution_object {
+  object-fit: contain;
 }
 
 .all_project {
@@ -22,13 +26,13 @@
     0px 15px 9px 0px rgba(23, 23, 23, 0.02),
     0px 27px 11px 0px rgba(23, 23, 23, 0.01),
     0px 42px 12px 0px rgba(23, 23, 23, 0);
-  color: #152c5b;
-  border: 1px solid #152c5b;
+  color: #070654;
+    border: 1px solid #070654;
   width: 112px;
   height: 44px;
 }
 .all_project:hover {
-  border: 1px solid #152c5b !important;
-  background-color: #152c5b !important;
+  border: 1px solid #070654 !important;
+    background-color: #070654 !important;
   color: white !important;
 }

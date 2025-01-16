@@ -1,0 +1,20 @@
+{
+    "allServiceData": [
+      {
+        "id": "Se010001",
+        "name": "Recruitment",
+        "img": "../images/recruitment.jpg",
+        "alt": "Recruitment",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas explicabo laborum ducimus error? Quo non quam recusandae. Molestiae alias vel culpa ad dicta unde fugit commodi! Perferendis maxime repudiandae nemo."
+      },
+      {
+        "id": "Se010001",
+        "name": "Recruitment",
+        "img": "../images/recruitment.jpg",
+        "alt": "Recruitment",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas explicabo laborum ducimus error? Quo non quam recusandae. Molestiae alias vel culpa ad dicta unde fugit commodi! Perferendis maxime repudiandae nemo."
+      }
+      
+    ]
+  }
+  

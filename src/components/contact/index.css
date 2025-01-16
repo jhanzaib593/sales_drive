@@ -19,13 +19,13 @@
     0px 15px 9px 0px rgba(23, 23, 23, 0.02),
     0px 27px 11px 0px rgba(23, 23, 23, 0.01),
     0px 42px 12px 0px rgba(23, 23, 23, 0);
-  color: #152c5b;
+  color: #070654;
   width: 120px;
   height: 50px;
 }
 .Contact_btn:hover {
   transform: scale(1.06);
   transition: 0.5s;
-  color: #152c5b !important;
-  border: 1px solid #152c5b !important;
+  color: #070654 !important;
+    border: 1px solid #070654 !important;
 }

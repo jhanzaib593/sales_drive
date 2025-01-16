@@ -1,19 +1,20 @@
-import { Button, Col, Modal, Row } from "antd";
+import { Button, Col, Row } from "antd";
 import React, { useState } from "react";
 import "./index.css";
 import { Scrolling } from "react-scrolling";
+import ModalContact from "./modal";
 
 function Contact() {
   const [isModalOpen, setIsModalOpen] = useState(false);
+
   const showModal = () => {
     setIsModalOpen(true);
   };
-  const handleOk = () => {
+
+  const handleCloseModal = () => {
     setIsModalOpen(false);
   };
-  const handleCancel = () => {
-    setIsModalOpen(false);
-  };
+
   return (
     <div style={{ padding: "6em 1em" }}>
       <Scrolling
@@ -59,17 +60,8 @@ function Contact() {
             Lets discuss it and make your dream software come true!
           </p>
         </div>
-        <Modal
-          title="Basic Modal"
-          open={isModalOpen}
-          onOk={handleOk}
-          onCancel={handleCancel}
-        >
-          <p>Some contents...</p>
-          <p>Some contents...</p>
-          <p>Some contents...</p>
-        </Modal>
       </Scrolling>
+      <ModalContact showModal={isModalOpen} handleClose={handleCloseModal} />
     </div>
   );
 }

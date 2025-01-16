@@ -1,12 +1,30 @@
 import { Col, Row } from "antd";
-import React from "react";
-import Web from "../../assets/img/Web.png";
-import Mobile from "../../assets/img/Mobile.png";
-import Design from "../../assets/img/Design.png";
-
+import React, { useEffect, useState } from "react";
 import "./index.css";
 import { Scrolling } from "react-scrolling";
+
 function Service() {
+  const [products, setProducts] = useState([]);
+
+  async function getProducts() {
+    try {
+      const response = await fetch("/services.json");
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      const text = await response.text();
+      const data = JSON.parse(text);
+
+      setProducts(data.allServiceData);
+    } catch (error) {
+      console.error("Failed to fetch products:", error);
+    }
+  }
+
+  useEffect(() => {
+    getProducts();
+  }, []);
+
   return (
     <div
       style={{
@@ -31,67 +49,33 @@ function Service() {
           </p>
         </Scrolling>
 
-        <Row>
-          <Col span={8} xs={24} sm={24} md={12} lg={8}>
-            <Scrolling
-              animate="fade-up"
-              transition={{ easing: "ease-in", delay: 10 }}
-            >
-              <div className="ser_pro">
-                <img src={Web} alt="Web Development" width={280} height={280} />
-                <h2
-                  className="font_family"
-                  style={{ fontWeight: 400, fontSize: 20 }}
-                >
-                  Web Development
-                </h2>
-              </div>
-            </Scrolling>
-          </Col>
-
-          <Col span={8} xs={24} sm={24} md={12} lg={8}>
-            <Scrolling
-              animate="fade-up"
-              transition={{ easing: "ease-in", delay: 10 }}
-            >
-              <div className="ser_pro">
-                <img
-                  src={Mobile}
-                  alt="Mobile Development"
-                  width={280}
-                  height={280}
-                />
-                <h2
-                  className="font_family"
-                  style={{ fontWeight: 400, fontSize: 20 }}
-                >
-                  Mobile Development
-                </h2>
-              </div>
-            </Scrolling>
-          </Col>
-          <Col span={8} xs={24} sm={24} md={12} lg={8}>
-            <Scrolling
-              animate="fade-up"
-              transition={{ easing: "ease-in", delay: 10 }}
-            >
-              <div className="ser_pro">
-                <img
-                  src={Design}
-                  alt="UI/UX Design
-"
-                  width={280}
-                  height={280}
-                />
-                <h2
-                  className="font_family"
-                  style={{ fontWeight: 400, fontSize: 20 }}
-                >
-                  UI/UX Design
-                </h2>
-              </div>
-            </Scrolling>
-          </Col>
+        <Row justify={"center"}>
+          {Array.isArray(products) &&
+            products.map((service, index) => {
+              return (
+                <Col span={8} xs={24} sm={24} md={12} lg={8} key={index}>
+                  <Scrolling
+                    animate="fade-up"
+                    transition={{ easing: "ease-in", delay: 10 }}
+                  >
+                    <div className="ser_pro">
+                      <img
+                        src={service.img}
+                        alt={service.name}
+                        width={280}
+                        height={280}
+                      />
+                      <h2
+                        className="font_family"
+                        style={{ fontWeight: 400, fontSize: 20 }}
+                      >
+                        {service.name}
+                      </h2>
+                    </div>
+                  </Scrolling>
+                </Col>
+              );
+            })}
         </Row>
       </div>
     </div>
