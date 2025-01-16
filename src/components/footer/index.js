@@ -16,7 +16,7 @@ function Footer() {
         <div className="container">
           <Row style={{ padding: "4rem 0" }}>
             <Col span={8} xs={24} sm={24} md={8} lg={8}>
-              <img src={logo} alt="" width={200} height={100} />
+              <img src={logo} alt="" width={150} height={100} />
               <p
                 className="font_family"
                 style={{
