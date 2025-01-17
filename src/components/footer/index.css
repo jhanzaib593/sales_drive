@@ -7,6 +7,16 @@
 }
 .foot_meau li {
   padding: 5px 0;
+  color: white !important;
+  }
+  
+  .foot_meau li a {
+  
+    color: white !important;
+  }
+  
+  .foot_meau li a:hover {
+    color: rgb(156 163 175) !important;
 }
 .foot_contact {
   padding: 2px 14px;

@@ -2,6 +2,7 @@ import { Col, Row } from "antd";
 import React from "react";
 import logo from "../../assets/img/logo (2).jpeg";
 import "./index.css";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -30,27 +31,33 @@ function Footer() {
             </Col>
             <Col span={8} xs={24} sm={24} md={8} lg={8}>
               <ul className="foot_meau">
-                <li>Home</li>
-                <li>Company</li>
-                <li>Services</li>
-                <li>Add Recipe</li>
-                <li>Blog</li>
-                <li>About us</li>
+                <li>
+                  <Link to="/"> Home</Link>
+                </li>
+                <li>
+                  <Link to="/underconstruction"> Company </Link>
+                </li>
+                <li>
+                  <Link to="/underconstruction"> Services</Link>
+                </li>
+                <li>
+                  <Link to="/underconstruction"> About us</Link>
+                </li>
               </ul>
             </Col>
             <Col span={8} xs={24} sm={24} md={8} lg={8}>
               <ul className="foot_contact">
                 <li>
                   <span style={{ fontWeight: "bolder", fontSize: 18 }}>
-                    Tel:{" "}
+                    Tel:
                   </span>
-                  <a href="tel:+92333333333">+92 33333 3333</a>
+                  <a href="tel:+923320350817">+92 332 0350817</a>
                 </li>
                 <li>
                   <span style={{ fontWeight: "bolder", fontSize: 18 }}>
                     Email:
                   </span>
-                  <a href="mailto:sales@gmail.com"> sales@gmail.com</a>
+                  <a href="mailto:hr@two-collars.com"> hr@two-collars.com</a>
                 </li>
               </ul>
             </Col>

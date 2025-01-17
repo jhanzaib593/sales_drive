@@ -1,7 +1,6 @@
-import { Button, Col, Row } from "antd";
+import { Col, Row } from "antd";
 import React, { useEffect, useState } from "react";
 import "./index.css";
-import { DoubleRightOutlined } from "@ant-design/icons";
 import { Scrolling } from "react-scrolling";
 
 function Project() {

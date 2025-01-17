@@ -1,6 +1,6 @@
 import { Col, Drawer, Row, Affix, Button } from "antd";
 import "./index.css";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logo from "../../assets/img/logo (2).jpeg";
 import React, { useState } from "react";
 import { MenuFoldOutlined } from "@ant-design/icons";
@@ -24,6 +24,8 @@ const Header = () => {
     setIsModalOpen(false);
   };
   const [top, setTop] = React.useState(0);
+  console.log(setTop);
+
   return (
     <>
       <Affix offsetTop={top}>
@@ -31,15 +33,25 @@ const Header = () => {
           <div className="container">
             <Row style={{ padding: "12px 0" }}>
               <Col span={8} className="logo">
-                <img src={logo} alt="" width={100} height={80} />
+                <Link to="/">
+                  <img src={logo} alt="" width={100} height={80} />
+                </Link>
               </Col>
               <Col span={12}>
                 <div className="nav">
-                  <NavLink className="nav_link">Company</NavLink>
-                  <NavLink className="nav_link">Services</NavLink>
+                  <NavLink to="/underconstruction" className="nav_link">
+                    Company
+                  </NavLink>
+                  <NavLink to="/underconstruction" className="nav_link">
+                    Services
+                  </NavLink>
 
-                  <NavLink className="nav_link">Blog</NavLink>
-                  <NavLink className="nav_link">About us</NavLink>
+                  <NavLink to="/underconstruction" className="nav_link">
+                    Blog
+                  </NavLink>
+                  <NavLink to="/underconstruction" className="nav_link">
+                    About us
+                  </NavLink>
                 </div>
               </Col>
               <Col span={4} className="h_btn">
