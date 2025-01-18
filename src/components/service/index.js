@@ -5,22 +5,22 @@ import { Scrolling } from "react-scrolling";
 
 function Service() {
   const [products, setProducts] = useState([]);
-  // const url = "/services.json";
-  const url = "https://api.jsonbin.io/b/60f3c4b4a917050205c0b8d6";
-  async function getProducts() {
-    try {
-      const response = await fetch(url);
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
-      const text = await response.text();
-      const data = JSON.parse(text);
-
-      setProducts(data.allServiceData);
-    } catch (error) {
-      console.error("Failed to fetch products:", error);
+const url = "/services.json";
+// const url = "https://api.jsonbin.io/b/60f3c4b4a917050205c0b8d6";
+async function getProducts() {
+  try {
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
     }
+    const text = await response.text();
+    const data = JSON.parse(text);
+
+    setProducts(data.allServiceData);
+  } catch (error) {
+    console.error("Failed to fetch products:", error);
   }
+}
 
   useEffect(() => {
     getProducts();
