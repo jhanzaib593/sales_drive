@@ -1,7 +1,7 @@
 import { Col, Drawer, Row, Affix, Button } from "antd";
 import "./index.css";
 import { Link, NavLink } from "react-router-dom";
-import logo from "../../assets/img/logo (2).jpeg";
+import logo from "../../assets/img/2 (2).png";
 import React, { useState } from "react";
 import { MenuFoldOutlined } from "@ant-design/icons";
 import ModalContact from "../contact/modal";
@@ -34,10 +34,10 @@ const Header = () => {
             <Row style={{ padding: "12px 0" }}>
               <Col span={8} className="logo">
                 <Link to="/">
-                  <img src={logo} alt="" width={100} height={80} />
+                  <img src={logo} alt="" width={75} height={65} />
                 </Link>
               </Col>
-              <Col span={12}>
+              <Col span={12} style={{ margin: "auto" }}>
                 <div className="nav">
                   <NavLink to="/underconstruction" className="nav_link">
                     Company
@@ -54,7 +54,7 @@ const Header = () => {
                   </NavLink>
                 </div>
               </Col>
-              <Col span={4} className="h_btn">
+              <Col span={4} className="h_btn" style={{ margin: "auto" }}>
                 <Button onClick={showModal} className="h_btn2">
                   Contact Us
                 </Button>

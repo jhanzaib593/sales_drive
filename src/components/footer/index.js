@@ -1,6 +1,6 @@
 import { Col, Row } from "antd";
 import React from "react";
-import logo from "../../assets/img/logo (2).jpeg";
+import logo from "../../assets/img/footer.png";
 import "./index.css";
 import { Link } from "react-router-dom";
 
@@ -17,7 +17,7 @@ function Footer() {
         <div className="container">
           <Row style={{ padding: "4rem 0" }}>
             <Col span={8} xs={24} sm={24} md={8} lg={8}>
-              <img src={logo} alt="" width={150} height={100} />
+              <img src={logo} alt="" width={120} height={100} />
               <p
                 className="font_family"
                 style={{
@@ -29,7 +29,14 @@ function Footer() {
                 Growing Your Business Is Our Callings
               </p>
             </Col>
-            <Col span={8} xs={24} sm={24} md={8} lg={8}>
+            <Col
+              span={8}
+              xs={24}
+              sm={24}
+              md={8}
+              lg={8}
+              style={{ margin: "auto" }}
+            >
               <ul className="foot_meau">
                 <li>
                   <Link to="/"> Home</Link>
@@ -45,7 +52,14 @@ function Footer() {
                 </li>
               </ul>
             </Col>
-            <Col span={8} xs={24} sm={24} md={8} lg={8}>
+            <Col
+              span={8}
+              xs={24}
+              sm={24}
+              md={8}
+              lg={8}
+              style={{ margin: "auto" }}
+            >
               <ul className="foot_contact">
                 <li>
                   <span style={{ fontWeight: "bolder", fontSize: 18 }}>
