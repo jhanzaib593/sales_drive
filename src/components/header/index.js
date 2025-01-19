@@ -1,43 +1,46 @@
-import { Col, Drawer, Row, Affix, Button } from "antd";
+// import { Col, Drawer, Row, Affix, Button } from "antd";
+import { Col, Row } from "antd";
+
 import "./index.css";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import logo from "../../assets/img/2 (2).png";
-import React, { useState } from "react";
-import { MenuFoldOutlined } from "@ant-design/icons";
-import ModalContact from "../contact/modal";
+import React from "react";
+// import { MenuFoldOutlined } from "@ant-design/icons";
+// import ModalContact from "../contact/modal";
 
 const Header = () => {
-  const [open, setOpen] = useState(false);
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const showDrawer = () => {
-    setOpen(true);
-  };
-  const onClose = () => {
-    setOpen(false);
-  };
+  // const [open, setOpen] = useState(false);
+  // const [isModalOpen, setIsModalOpen] = useState(false);
+  // const showDrawer = () => {
+  //   setOpen(true);
+  // };
+  // const onClose = () => {
+  //   setOpen(false);
+  // };
 
-  const showModal = () => {
-    setIsModalOpen(true);
-  };
+  // const showModal = () => {
+  //   setIsModalOpen(true);
+  // };
 
-  const handleCloseModal = () => {
-    setIsModalOpen(false);
-  };
-  const [top, setTop] = React.useState(0);
-  console.log(setTop);
+  // const handleCloseModal = () => {
+  //   setIsModalOpen(false);
+  // };
+  // const [top, setTop] = React.useState(0);
+  // console.log(setTop);
 
   return (
     <>
-      <Affix offsetTop={top}>
-        <div style={{ backgroundColor: "white" }}>
-          <div className="container">
-            <Row style={{ padding: "12px 0" }}>
-              <Col span={8} className="logo">
-                <Link to="/">
-                  <img src={logo} alt="" width={75} height={65} />
-                </Link>
-              </Col>
-              <Col span={12} style={{ margin: "auto" }}>
+      {/* <Affix offsetTop={top}> */}
+      <div style={{ backgroundColor: "white" }}>
+        <div className="container">
+          <Row style={{ padding: "12px 0" }}>
+            <Col span={24} className="logo">
+              <Link to="/">
+                <img src={logo} alt="" width={75} height={65} />
+              </Link>
+            </Col>
+
+            {/* <Col span={12} style={{ margin: "auto" }}>
                 <div className="nav">
                   <NavLink to="/underconstruction" className="nav_link">
                     Company
@@ -58,9 +61,9 @@ const Header = () => {
                 <Button onClick={showModal} className="h_btn2">
                   Contact Us
                 </Button>
-                {/* <Button className="h_btn2">Sign up</Button> */}
-              </Col>
-              <Col span={4} className="h_drawer">
+              </Col> */}
+
+            {/* <Col span={4} className="h_drawer">
                 <MenuFoldOutlined onClick={showDrawer} />
                 <Drawer onClose={onClose} open={open}>
                   <div className="nav_d">
@@ -72,12 +75,12 @@ const Header = () => {
                     <NavLink className="nav_link nav_link_d">About us</NavLink>
                   </div>
                 </Drawer>
-              </Col>
-            </Row>
-          </div>
+              </Col> */}
+          </Row>
         </div>
-      </Affix>
-      <ModalContact showModal={isModalOpen} handleClose={handleCloseModal} />
+      </div>
+      {/* </Affix> */}
+      {/* <ModalContact showModal={isModalOpen} handleClose={handleCloseModal} /> */}
     </>
   );
 };

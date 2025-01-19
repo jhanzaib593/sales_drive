@@ -15,8 +15,15 @@ function Footer() {
         }}
       >
         <div className="container">
-          <Row style={{ padding: "4rem 0" }}>
-            <Col span={8} xs={24} sm={24} md={8} lg={8}>
+          <Row style={{ padding: "1rem 0", textAlign: "center" }}>
+            <Col
+              span={24}
+              xs={24}
+              sm={24}
+              md={24}
+              lg={24}
+              style={{ padding: "1em 0" }}
+            >
               <img src={logo} alt="" width={120} height={100} />
               <p
                 className="font_family"
@@ -24,12 +31,13 @@ function Footer() {
                   color: "rgb(156, 163, 175)",
                   fontWeight: 400,
                   fontSize: 18,
+                  padding: "1em 0",
                 }}
               >
                 Growing Your Business Is Our Callings
               </p>
             </Col>
-            <Col
+            {/* <Col
               span={8}
               xs={24}
               sm={24}
@@ -51,16 +59,16 @@ function Footer() {
                   <Link to="/underconstruction"> About us</Link>
                 </li>
               </ul>
-            </Col>
+            </Col> */}
             <Col
-              span={8}
+              span={24}
               xs={24}
               sm={24}
-              md={8}
-              lg={8}
+              md={24}
+              lg={24}
               style={{ margin: "auto" }}
             >
-              <ul className="foot_contact">
+              <ul className="foot_contact" style={{ padding: "1em 0" }}>
                 <li>
                   <span style={{ fontWeight: "bolder", fontSize: 18 }}>
                     Tel:
@@ -77,6 +85,19 @@ function Footer() {
             </Col>
           </Row>
         </div>
+      </div>
+      <div className="copy_right">
+        <p
+          className="font_family"
+          style={{
+            color: "white",
+            fontWeight: 400,
+            fontSize: 16,
+            padding: "10px 0",
+          }}
+        >
+          © 2025 Two Collars. All Rights Reserved.
+        </p>
       </div>
     </footer>
   );

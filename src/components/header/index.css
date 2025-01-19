@@ -8,6 +8,7 @@
   font-size: 32px;
   font-style: normal;
   font-weight: 500;
+  justify-content: center;
 }
 .nav {
   display: flex;

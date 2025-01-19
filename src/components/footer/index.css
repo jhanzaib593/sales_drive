@@ -32,3 +32,7 @@
 .foot_contact li a:hover {
   color: rgb(156 163 175);
 }
+.copy_right {
+  background-color: #828282;
+  text-align: center;
+}
