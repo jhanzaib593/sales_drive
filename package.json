@@ -1,7 +1,7 @@
 {
   "name": "sales_drive",
   "version": "0.1.0",
-  "homepage": "http://www.sale.byethost7.com/",
+  "homepage": "https://two-collars.com/",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.3",
