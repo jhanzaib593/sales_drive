@@ -23,7 +23,14 @@ function Contact() {
       >
         <div className="contact contact_color">
           <Row>
-            <Col span={16} xs={24} sm={24} md={24} lg={16}>
+            <Col
+              span={16}
+              xs={24}
+              sm={24}
+              md={24}
+              lg={16}
+              style={{ margin: "auto" }}
+            >
               <h1
                 className="font_family"
                 style={{ fontWeight: 700, fontSize: 35, color: "white" }}
@@ -39,15 +46,22 @@ function Contact() {
               lg={8}
               style={{ margin: "auto", textAlign: "center", padding: "20px 0" }}
             >
-              <Button
-                className="Contact_btn font_family"
-                style={{ width: 220, fontWeight: 600, height: 60 }}
-                onClick={showModal}
+              <a
+                aria-label="Chat on WhatsApp"
+                target="_blank"
+                href="https://wa.me/+923320350817"
               >
-                Lets Discuss!
-              </Button>
+                <Button
+                  className="Contact_btn font_family"
+                  style={{ width: 220, fontWeight: 600, height: 60 }}
+                  // onClick={showModal}
+                >
+                  Lets Discuss!
+                </Button>{" "}
+              </a>
             </Col>
           </Row>
+
           <p
             className="font_family"
             style={{

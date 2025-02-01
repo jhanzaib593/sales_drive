@@ -1,6 +1,6 @@
 import { Col, Row } from "antd";
 import React from "react";
-import logo from "../../assets/img/footer.png";
+import logo from "../../assets/img/footer (1).png";
 import "./index.css";
 import { Link } from "react-router-dom";
 
@@ -24,7 +24,7 @@ function Footer() {
               lg={24}
               style={{ padding: "1em 0" }}
             >
-              <img src={logo} alt="" width={120} height={100} />
+              <img src={logo} alt="" width={125} height={110} />
               <p
                 className="font_family"
                 style={{
